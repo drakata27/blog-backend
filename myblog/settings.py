@@ -150,7 +150,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+
+    # Production
     "https://blog-frontend-sigma-navy.vercel.app",
+    "https://aleks-draka-blog-aleksandar-drakaliyskis-projects.vercel.app",
+    "https://aleks-draka-blog-git-main-aleksandar-drakaliyskis-projects.vercel.app",
 ]
 
 JAZZMIN_UI_TWEAKS = {
