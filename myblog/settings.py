@@ -152,6 +152,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 
     # Production
+    "https://aleksdraka.online",
+    "http://aleksdraka.online",
+
     "https://blog-frontend-sigma-navy.vercel.app",
     "https://aleks-draka-blog-aleksandar-drakaliyskis-projects.vercel.app",
     "https://aleks-draka-blog-git-main-aleksandar-drakaliyskis-projects.vercel.app",
