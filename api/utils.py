@@ -1,6 +1,7 @@
 from .models import Blog
 from .serializers import BlogSerializer
 from rest_framework.response import Response
+import json
 
 def get_blogs_list():
     blogs = Blog.objects.all().order_by('-created')
@@ -13,7 +14,8 @@ def create_blog(request):
         title=data['title'],
         subtitle=data['subtitle'],
         cover=data['cover'],
-        body=data['body']
+        body=data['body'],
+        is_draft=json.loads(request.POST.get('is_draft', 'false')),
     )
 
     serializer = BlogSerializer(blog, many=False)
