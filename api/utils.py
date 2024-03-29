@@ -4,7 +4,7 @@ from rest_framework.response import Response
 import json
 
 def get_blogs_list():
-    blogs = Blog.objects.all().order_by('-created')
+    blogs = Blog.objects.all().order_by('-updated')
     serializer = BlogSerializer(blogs, many=True)
     return Response(serializer.data)
 
