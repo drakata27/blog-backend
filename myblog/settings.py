@@ -153,6 +153,7 @@ CORS_ALLOWED_ORIGINS = [
 
     # Production
     "https://aleksdraka.online",  
+    "https://blog.aleksdraka.online",  
     "https://www.aleksdraka.online",
 
     "https://blog-frontend-sigma-navy.vercel.app",
